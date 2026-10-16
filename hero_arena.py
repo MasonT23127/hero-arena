@@ -13,14 +13,16 @@ import datetime
 
 #------functions-------------------------
 def hero_roster():
-    print("**.  Hero List:  **")
+    print("**..  Hero List:  ..**")
 #"Name/title, Health, Attack, Defence, Weapon"
 #Stats are 1-100. 1 being the worst possible and 100 being the best. 
-# however, all heroes have the maximum points allocated. and that is 275.
+# however, all heroes have the maximum points allocated. = 275 points
 
-heroes_list = ["Legal Man", 70, 80, 65, 60, 
+    heroes_list =["Legal Man", 70, 80, 65, 60, 
                 "Window Face", 40, 100, 35, 100, 
-                "Deploy",  
+                "Deploy", 70, 70, 70, 65,
+                'Tank Skin', 100, 45, 100, 30,
+
 
                ]
 
