@@ -21,10 +21,9 @@ def hero_roster():
     heroes_list =["Legal Man", 70, 80, 65, 60, 
                 "Window Face", 40, 100, 35, 100, 
                 "Deploy", 70, 70, 70, 65,
-                'Tank Skin', 100, 45, 100, 30,
-
-
-               ]
+                'Tanker', 100, 45, 100, 30,
+                "Lava Palms", 65, 70, 70, 70,
+                "Forceful", 60, 80, 40, 95]
 
 
 #------main routine-------------------------
