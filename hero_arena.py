@@ -43,4 +43,13 @@ def add_hero(): #User can add their own hero to the roster
     defence = int(input("Enter your hero's defence (1-100): "))
     weapon = int(input("Enter your hero's weapon (1-100): "))
 
+    total_points = health + attack + defence + weapon
+    if total_points != 275:
+        print("Error: Total points must equal 275. Please try again.")
+        return
+
+    new_hero = [name, health, attack, defence, weapon]
+    print(f"New hero added: {new_hero}")
+    
+
 #------main routine-------------------------
