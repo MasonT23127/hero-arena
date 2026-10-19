@@ -57,6 +57,8 @@ def add_hero():
 
 def edit_hero():
     print("**..  Edit Heroes:  ..**")
+    print("Here is the current hero roster:")
+    hero_roster()
     hero_name = input("Enter the name of the hero you want to edit: ")
 
     # Find the hero in the roster
@@ -73,3 +75,5 @@ def edit_hero():
 #------main routine-------------------------
 if(__name__=="__main__"):
     pass
+
+edit_hero()
