@@ -34,8 +34,9 @@ def hero_roster():
         print("-----------------------------")
 
 
-
-def add_hero(): #User can add their own hero to the roster
+ #User can add their own hero to the roster
+ # However, they must use all allocated points.
+def add_hero():
     print("**..  Add Your Hero:  ..**")
     name = input("Enter your hero's name/title: ")
     health = int(input("Enter your hero's health (1-100): "))
@@ -51,5 +52,8 @@ def add_hero(): #User can add their own hero to the roster
     new_hero = [name, health, attack, defence, weapon]
     print(f"New hero added: {new_hero}")
     
+
+
+
 
 #------main routine-------------------------
