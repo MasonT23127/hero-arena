@@ -62,3 +62,5 @@ def edit_hero():
 
 
 #------main routine-------------------------
+if(__name__=="__main__"):
+    pass
