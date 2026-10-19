@@ -10,6 +10,8 @@
 #----------libraries----------------------
 import random
 import datetime
+import string
+import os
 
 #------functions-------------------------
 def hero_roster():
