@@ -53,6 +53,9 @@ def add_hero():
     print(f"New hero added: {new_hero}")
     
 
+def edit_hero():
+    print("**..  Edit Heroes:  ..**")
+
 
 
 
