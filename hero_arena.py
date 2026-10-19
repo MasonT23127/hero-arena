@@ -24,5 +24,15 @@ def hero_roster():
                 'Tanker', 100, 45, 100, 30,
                 "Lava Palms", 65, 70, 70, 70,
                 "Forceful", 60, 80, 40, 95]
-    
+
+    for i in range(0, len(heroes_list), 5):
+        print(f"Name: {heroes_list[i]}")
+        print(f"Health: {heroes_list[i+1]}")
+        print(f"Attack: {heroes_list[i+2]}")
+        print(f"Defence: {heroes_list[i+3]}")
+        print(f"Weapon: {heroes_list[i+4]}")
+        print("-----------------------------")
+
+
+
 #------main routine-------------------------
