@@ -57,8 +57,17 @@ def add_hero():
 
 def edit_hero():
     print("**..  Edit Heroes:  ..**")
+    hero_name = input("Enter the name of the hero you want to edit: ")
 
-
+    # Find the hero in the roster
+    for i in range(0, len(heroes_list), 5):
+        if heroes_list[i] == hero_name:
+            print(f"Editing hero: {heroes_list[i]}")
+            print(f"Current Health: {heroes_list[i+1]}")
+            print(f"Current Attack: {heroes_list[i+2]}")
+            print(f"Current Defence: {heroes_list[i+3]}")
+            print(f"Current Weapon: {heroes_list[i+4]}")
+            print("-----------------------------")
 
 
 #------main routine-------------------------
