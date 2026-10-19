@@ -35,4 +35,12 @@ def hero_roster():
 
 
 
+def add_hero(): #User can add their own hero to the roster
+    print("**..  Add Your Hero:  ..**")
+    name = input("Enter your hero's name/title: ")
+    health = int(input("Enter your hero's health (1-100): "))
+    attack = int(input("Enter your hero's attack (1-100): "))
+    defence = int(input("Enter your hero's defence (1-100): "))
+    weapon = int(input("Enter your hero's weapon (1-100): "))
+
 #------main routine-------------------------
