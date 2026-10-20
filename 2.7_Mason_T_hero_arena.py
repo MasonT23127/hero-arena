@@ -89,9 +89,9 @@ def edit_hero():
             weapon = int(input("Enter new weapon: "))
 
             heroes_list[i+1] = health
-            heroes_list[i+1] = attack
-            heroes_list[i+1] = defence
-            heroes_list[i+1] = weapon
+            heroes_list[i+2] = attack
+            heroes_list[i+3] = defence
+            heroes_list[i+4] = weapon
 
             print(f"{hero_name} successfully updated.")
 
