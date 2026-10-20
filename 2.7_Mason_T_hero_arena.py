@@ -22,6 +22,8 @@ heroes_list =["Legal Man", 70, 80, 65, 60,
                 "Lava Palms", 65, 70, 70, 70,
                 "Forceful", 60, 80, 40, 95]
 
+
+
 def hero_roster():
     print("**..  Hero List:  ..**")
 # "Name/title, Health, Attack, Defence, Weapon"
@@ -39,12 +41,10 @@ def hero_roster():
         print("-----------------------------")
 
 
+ 
+
  #User can add their own hero to the roster
  # However, they must use all allocated points.
-
-
-
-
 def add_hero():
     print("**..  Add Your Hero:  ..**")
     name = input("Enter your hero's name/title: ")
@@ -59,12 +59,13 @@ def add_hero():
         return
 
     new_hero = [name, health, attack, defence, weapon]
+    heroes_list.extend(new_hero)
     print(f"New hero added: {new_hero}")
     
 
 
 
-
+# Allows the user to edit any hero they'll like
 def edit_hero():
     print("**..  Edit Heroes:  ..**")
     print("Here is the current hero roster:")
