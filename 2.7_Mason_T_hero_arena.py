@@ -122,6 +122,10 @@ def remove_hero():
             return
 
 
+#Allows the user to battle heroes
+#User will choose two heroes, and then will fight, which is done by taking turns.
+#winner is determined by who reaches 0 health first.
+
 def battle():
     attack = heroes_list[2]
     defence = heroes_list[3]
