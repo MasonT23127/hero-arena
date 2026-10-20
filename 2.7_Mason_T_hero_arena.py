@@ -15,6 +15,8 @@ import os
 
 #------functions-------------------------
 
+#These are the standard heroes
+#User can add additonal or remove heroes if they'd like.
 heroes_list =["Legal Man", 70, 80, 65, 60, 
                 "Window Face", 40, 100, 35, 100, 
                 "Deploy", 70, 70, 70, 65,
@@ -24,6 +26,7 @@ heroes_list =["Legal Man", 70, 80, 65, 60,
 
 
 
+#View the Hero Roster
 def hero_roster():
     print("**..  Hero List:  ..**")
 # "Name/title, Health, Attack, Defence, Weapon"
@@ -133,11 +136,28 @@ def battle():
 
    # Formula for damage
     damage = attack + weapon - defence
+    print("**.. Battle ..**")
 
+    print("Here is your current roster:")
+    hero_roster()
+
+    # First hero choice
+    hero1 = input("Enter your first hero: ")
+    for i in range(0, len(heroes_list), 5):
+        if heroes_list[i] == hero1:
+            print(f"Your first hero: {heroes_list[i]} ")
+            continue
+            
+        
+    # Second hero choice
+    hero2 = input("Enter your second hero: ")
+    for i in range(0, len(heroes_list), 5):
+        if heroes_list[i] == hero2:
+            print(f"Your Second hero: {heroes_list[i]}")
+            continue
 
 #------main routine-------------------------
 if(__name__=="__main__"):
-    add_hero()
-    hero_roster()
+    battle()
 
 
