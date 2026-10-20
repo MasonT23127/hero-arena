@@ -111,12 +111,12 @@ def remove_hero():
         if heroes_list[i] == hero_name:
             print(f"Removing hero: {heroes_list[i]}")
 
-        # remove the hero and the stats
-        del heroes_list[i:i+5] # had to research how to delete
+            # remove the hero and the stats
+            del heroes_list[i:i+5] # had to research how to delete
 
-        print("Hero has been removed.")
-        hero_roster()
-        return
+            print("Hero has been removed.")
+            hero_roster()
+            return
 
 
 
