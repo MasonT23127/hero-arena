@@ -97,9 +97,28 @@ def edit_hero():
 
 
 
-
+# Allows the user to remove any hero they would like from the roster
+#including their own heros that they have created.
 def remove_hero():
     print("**.. Remove Heroes: ..**")
+    print("Here is the current Hero Roster:")
+    hero_roster()
+
+    hero_name = input("Enter the name of the hero you want to remove: ")
+
+    #Find hero in roster
+    for i in range(0, len(heroes_list), 5):
+        if heroes_list[i] == hero_name:
+            print(f"Removing hero: {heroes_list[i]}")
+
+        # remove the hero and the stats
+        del heroes_list[i:i+5] # had to research how to delete
+
+        print("Hero has been removed.")
+        hero_roster()
+        return
+
+
 
 #------main routine-------------------------
 if(__name__=="__main__"):
