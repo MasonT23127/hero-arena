@@ -95,6 +95,12 @@ def edit_hero():
 
             print(f"{hero_name} successfully updated.")
 
+
+
+
+def remove_hero():
+    print("**.. Remove Heroes: ..**")
+
 #------main routine-------------------------
 if(__name__=="__main__"):
     pass
