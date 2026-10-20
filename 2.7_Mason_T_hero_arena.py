@@ -130,6 +130,7 @@ def remove_hero():
 #winner is determined by who reaches 0 health first.
 
 def battle():
+    
     attack = heroes_list[2]
     defence = heroes_list[3]
     weapon = heroes_list[4]
@@ -155,6 +156,8 @@ def battle():
         if heroes_list[i] == hero2:
             print(f"Your Second hero: {heroes_list[i]}")
             continue
+
+
 
 #------main routine-------------------------
 if(__name__=="__main__"):
