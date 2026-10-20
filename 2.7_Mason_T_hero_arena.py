@@ -53,6 +53,7 @@ def add_hero():
     defence = int(input("Enter your hero's defence (1-100): "))
     weapon = int(input("Enter your hero's weapon (1-100): "))
 
+    #calculations if the user has entered 275 points
     total_points = health + attack + defence + weapon
     if total_points != 275:
         print("Error: Total points must equal 275. Please try again.")
@@ -88,12 +89,14 @@ def edit_hero():
             defence = int(input("Enter new defence: "))
             weapon = int(input("Enter new weapon: "))
 
+            #changes the stats
             heroes_list[i+1] = health
             heroes_list[i+2] = attack
             heroes_list[i+3] = defence
             heroes_list[i+4] = weapon
 
             print(f"{hero_name} successfully updated.")
+            return
 
 
 
