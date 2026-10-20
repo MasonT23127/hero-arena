@@ -122,9 +122,18 @@ def remove_hero():
             return
 
 
+def battle():
+    attack = heroes_list[2]
+    defence = heroes_list[3]
+    weapon = heroes_list[4]
+
+   # Formula for damage
+    damage = attack + weapon - defence
+
 
 #------main routine-------------------------
 if(__name__=="__main__"):
-    pass
+    add_hero()
+    hero_roster()
 
 
