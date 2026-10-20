@@ -41,6 +41,10 @@ def hero_roster():
 
  #User can add their own hero to the roster
  # However, they must use all allocated points.
+
+
+
+
 def add_hero():
     print("**..  Add Your Hero:  ..**")
     name = input("Enter your hero's name/title: ")
@@ -58,6 +62,9 @@ def add_hero():
     print(f"New hero added: {new_hero}")
     
 
+
+
+
 def edit_hero():
     print("**..  Edit Heroes:  ..**")
     print("Here is the current hero roster:")
@@ -74,8 +81,21 @@ def edit_hero():
             print(f"Current Weapon: {heroes_list[i+4]}")
             print("-----------------------------")
 
+        #now asking the user's input
+            health = int(input("Enter new health: "))
+            attack = int(input("Enter new attack: "))
+            defence = int(input("Enter new defence: "))
+            weapon = int(input("Enter new weapon: "))
+
+            heroes_list[i+1] = health
+            heroes_list[i+1] = attack
+            heroes_list[i+1] = defence
+            heroes_list[i+1] = weapon
+
+            print(f"{hero_name} successfully updated.")
 
 #------main routine-------------------------
 if(__name__=="__main__"):
     pass
+
 
