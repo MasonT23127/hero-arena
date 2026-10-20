@@ -17,6 +17,7 @@ import os
 
 #These are the standard heroes
 #User can add additonal or remove heroes if they'd like.
+# "Name/title, Health, Attack, Defence, Weapon"
 heroes_list =["Legal Man", 70, 80, 65, 60, 
                 "Window Face", 40, 100, 35, 100, 
                 "Deploy", 70, 70, 70, 65,
