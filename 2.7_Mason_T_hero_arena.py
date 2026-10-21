@@ -172,9 +172,6 @@ def battle():
         print("Let the battle begin!")
    
    
-   
-   
-   
    # Formula for damage
     # What damage the first hero does:
     damage1 = attack + weapon - defence2
@@ -195,7 +192,11 @@ def battle():
    
    
     print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
+    health2 -=damage1
+    print(f"Damaged {hero2} for {damage1}, they are now on {health2} health! ")
+
     print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
+    print(f"Damaged {hero1} for {damage2}, they are now on {health} health! ")
 
 
 
