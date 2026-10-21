@@ -131,14 +131,10 @@ def remove_hero():
 #winner is determined by who reaches 0 health first.
 
 def battle():
-    
-    attack = heroes_list[2]
-    defence = heroes_list[3]
-    weapon = heroes_list[4]
-
-   # Formula for damage
-    damage = attack + weapon - defence
     print("**.. Battle ..**")
+
+
+
 
     print("Here is your current roster:")
     hero_roster()
@@ -148,16 +144,30 @@ def battle():
     for i in range(0, len(heroes_list), 5):
         if heroes_list[i] == hero1:
             print(f"Your first hero: {heroes_list[i]} ")
-            continue
-            
-        
+            health = heroes_list[i+1]
+            attack = heroes_list[i+2]
+            defence = heroes_list[i+3]
+            weapon = heroes_list[i+4]
+            print(f"Your first hero's stats - Health: {health}, Attack: {attack}, Defence: {defence}, Weapon: {weapon}")
+
     # Second hero choice
     hero2 = input("Enter your second hero: ")
     for i in range(0, len(heroes_list), 5):
         if heroes_list[i] == hero2:
             print(f"Your Second hero: {heroes_list[i]}")
-            continue
+            health = heroes_list[i+1]
+            attack2 = heroes_list[i+2]
+            defence2 = heroes_list[i+3]
+            weapon2 = heroes_list[i+4]
+            print(f"Your second hero's stats - Health: {health}, Attack: {attack2}, Defence: {defence2}, Weapon: {weapon2}")
 
+
+   # Formula for damage
+    # what damage the first hero does:
+    damage1 = attack + weapon - defence2
+    
+    #what damage the second hero does:
+    damage2 = attack2 + weapon2 - defence
 
 
 #------main routine-------------------------
