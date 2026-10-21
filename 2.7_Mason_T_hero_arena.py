@@ -206,6 +206,7 @@ def battle():
 
 #------main routine-------------------------
 if(__name__=="__main__"):
+    add_hero()
     battle()
 
 
