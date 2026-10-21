@@ -196,6 +196,7 @@ def battle():
     print(f"Damaged {hero2} for {damage1}, they are now on {health2} health! ")
 
     print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
+    health -=damage2
     print(f"Damaged {hero1} for {damage2}, they are now on {health} health! ")
 
 
