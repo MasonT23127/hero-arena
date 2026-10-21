@@ -148,7 +148,7 @@ def battle():
             attack1 = heroes_list[i+2]
             defence1 = heroes_list[i+3]
             weapon1 = heroes_list[i+4]
-            print(f"Your first hero's stats - Health: {health1}, Attack: {attack1}, Defence: {defence1}, Weapon: {weapon1}")
+            print(f"Your first hero's stats - Health: {health1}, Attack: {attack1}, Defence: {defence1}, Weapon: {weapon1}") 
 
     # Second hero choice
     hero2 = input("Enter your second hero: ")
