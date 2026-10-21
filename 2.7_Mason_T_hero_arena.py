@@ -18,7 +18,7 @@ import os
 #These are the standard heroes
 #User can add additonal or remove heroes if they'd like.
 # "Name/title, Health, Attack, Defence, Weapon"
-heroes_list =["Legal Man", 70, 80, 65, 60, 
+heroes_list =[  "Legal Man", 70, 80, 65, 60, 
                 "Window Face", 40, 100, 35, 100, 
                 "Deploy", 70, 70, 70, 65,
                 'Tanker', 100, 45, 100, 30,
@@ -162,6 +162,19 @@ def battle():
             print(f"Your second hero's stats - Health: {health2}, Attack: {attack2}, Defence: {defence2}, Weapon: {weapon2}")
 
 
+    change = input("Would you like to change your heroes? (y/n)")
+
+    if change ==("y"):
+        battle()
+    else:
+        print("The battle will now begin!")
+        print(f"{hero1} vs {hero2}")
+        print("Let the battle begin!")
+   
+   
+   
+   
+   
    # Formula for damage
     # What damage the first hero does:
     damage1 = attack + weapon - defence2
@@ -180,8 +193,10 @@ def battle():
     damage2 -= rand_num
   
    
+   
     print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
     print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
+
 
 
 
