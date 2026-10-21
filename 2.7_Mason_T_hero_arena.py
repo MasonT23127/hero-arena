@@ -175,15 +175,13 @@ def battle():
     #Random number, which will decrease attack damage
     rand_num = random.randint(50, 80)
     damage1 -= rand_num
-    rand_num = random.randint(50, 80)
+    
+    rand_num2 = random.randint(50, 80)
     damage2 -= rand_num
   
    
-   
     print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
-    print(f"Random number for {hero2}: {rand_num}. Final damage: {damage2}")
-
-
+    print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
 
 
 
