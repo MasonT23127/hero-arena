@@ -132,7 +132,7 @@ def remove_hero():
 
 def battle():
     print("**.. Battle ..**")
-
+    
 
 
 
@@ -163,11 +163,15 @@ def battle():
 
 
    # Formula for damage
-    # what damage the first hero does:
+    # What damage the first hero does:
     damage1 = attack + weapon - defence2
     
-    #what damage the second hero does:
+    # What damage the second hero does:
     damage2 = attack2 + weapon2 - defence
+
+    print(damage1)
+    print(damage2)
+
 
 
 #------main routine-------------------------
