@@ -144,11 +144,11 @@ def battle():
     for i in range(0, len(heroes_list), 5):
         if heroes_list[i] == hero1:
             print(f"Your first hero: {heroes_list[i]} ")
-            health = heroes_list[i+1]
-            attack = heroes_list[i+2]
-            defence = heroes_list[i+3]
-            weapon = heroes_list[i+4]
-            print(f"Your first hero's stats - Health: {health}, Attack: {attack}, Defence: {defence}, Weapon: {weapon}")
+            health1 = heroes_list[i+1]
+            attack1 = heroes_list[i+2]
+            defence1 = heroes_list[i+3]
+            weapon1 = heroes_list[i+4]
+            print(f"Your first hero's stats - Health: {health1}, Attack: {attack1}, Defence: {defence1}, Weapon: {weapon1}")
 
     # Second hero choice
     hero2 = input("Enter your second hero: ")
@@ -174,10 +174,10 @@ def battle():
    
    # Formula for damage
     # What damage the first hero does:
-    damage1 = attack + weapon - defence2
+    damage1 = attack1 + weapon1 - defence2
     
     # What damage the second hero does:
-    damage2 = attack2 + weapon2 - defence
+    damage2 = attack2 + weapon2 - defence1
 
 
 
@@ -195,6 +195,8 @@ def battle():
     health2 -=damage1
     print(f"Damaged {hero2} for {damage1}, they are now on {health2} health! ")
 
+
+    
     print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
     health -=damage2
     print(f"Damaged {hero1} for {damage2}, they are now on {health} health! ")
