@@ -198,15 +198,14 @@ def battle():
 
     
     print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
-    health -=damage2
-    print(f"Damaged {hero1} for {damage2}, they are now on {health} health! ")
+    health1 -=damage2
+    print(f"Damaged {hero1} for {damage2}, they are now on {health1} health! ")
 
 
 
 
 #------main routine-------------------------
 if(__name__=="__main__"):
-    add_hero()
-    battle()
+    hero_roster()
 
 
