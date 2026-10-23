@@ -209,6 +209,4 @@ def battle_history():
 
 #------main routine-------------------------
 if(__name__=="__main__"):
-    hero_roster()
-
-
+    battle()
