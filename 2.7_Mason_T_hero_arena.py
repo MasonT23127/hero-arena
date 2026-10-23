@@ -29,7 +29,7 @@ heroes_list =[  "Legal Man", 70, 80, 65, 60,
 
 #View the Hero Roster
 def hero_roster():
-    print("**..  Hero List:  ..**")
+    print( "\n**..  Hero List:  ..**")
 # "Name/title, Health, Attack, Defence, Weapon"
 # Stats are 1-100. 1 being the worst possible and 100 is the best. 
 # However, heroes must use all maximum points allocated. = 275 points
@@ -37,11 +37,11 @@ def hero_roster():
 
 
     for i in range(0, len(heroes_list), 5):
-        print(f"Name: {heroes_list[i]}")
+        print(f"\nName: {heroes_list[i]}")
         print(f"Health: {heroes_list[i+1]}")
         print(f"Attack: {heroes_list[i+2]}")
         print(f"Defence: {heroes_list[i+3]}")
-        print(f"Weapon: {heroes_list[i+4]}")
+        print(f"Weapon: {heroes_list[i+4]}\n")
         print("-----------------------------")
 
 
@@ -72,7 +72,7 @@ def add_hero():
 
 # Allows the user to edit any hero they'll like
 def edit_hero():
-    print("**..  Edit Heroes:  ..**")
+    print("\n**..  Edit Heroes:  ..**")
     print("Here is the current hero roster:")
     hero_roster()
     hero_name = input("Enter the name of the hero you want to edit: ")
@@ -131,7 +131,7 @@ def remove_hero():
 #winner is determined by who reaches 0 health first.
 
 def battle():
-    print("**.. Battle ..**")
+    print("\n**.. Battle ..**")
     
 
 
@@ -148,7 +148,7 @@ def battle():
             attack1 = heroes_list[i+2]
             defence1 = heroes_list[i+3]
             weapon1 = heroes_list[i+4]
-            print(f"Your first hero's stats - Health: {health1}, Attack: {attack1}, Defence: {defence1}, Weapon: {weapon1}") 
+            print(f"Your first hero's stats - Health: {health1}, Attack: {attack1}, Defence: {defence1}, Weapon: {weapon1}")
 
     # Second hero choice
     hero2 = input("Enter your second hero: ")
@@ -181,7 +181,6 @@ def battle():
 
 
 
-
     #Random number, which will decrease attack damage
     rand_num = random.randint(50, 80)
     damage1 -= rand_num
@@ -192,14 +191,18 @@ def battle():
    
    
     print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
-    health2 -=damage1
+    health2 -= damage1
     print(f"Damaged {hero2} for {damage1}, they are now on {health2} health! ")
 
 
     
     print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
-    health1 -=damage2
+    health1 -= damage2
     print(f"Damaged {hero1} for {damage2}, they are now on {health1} health! ")
+
+
+def battle_history():
+    print("\n**.. Battle History ..**")
 
 
 
