@@ -107,7 +107,7 @@ def edit_hero():
 # Allows the user to remove any hero they would like from the roster
 #including their own heros that they have created.
 def remove_hero():
-    print("**.. Remove Heroes: ..**")
+    print("\n**.. Remove Heroes: ..**")
     print("Here is the current Hero Roster:")
     hero_roster()
 
