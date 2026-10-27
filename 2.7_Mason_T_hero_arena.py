@@ -27,12 +27,13 @@ heroes_list =[  "Legal Man", 70, 80, 65, 60,
 
 
 
-#View the Hero Roster
+
 def hero_roster():
     print( "\n**..  Hero List:  ..**")
-# "Name/title, Health, Attack, Defence, Weapon"
-# Stats are 1-100. 1 being the worst possible and 100 is the best. 
-# However, heroes must use all maximum points allocated. = 275 points
+    #View the Hero Roster
+    # "Name/title, Health, Attack, Defence, Weapon"
+    # Stats are 1-100. 1 being the worst possible and 100 is the best. 
+    # However, heroes must use all maximum points allocated. = 275 points
 
 
 
@@ -47,9 +48,11 @@ def hero_roster():
 
  
 
- #User can add their own hero to the roster
- # However, they must use all allocated points.
+
 def add_hero():
+    #User can add their own hero to the roster
+    # However, they must use all allocated points.
+    
     print("**..  Add Your Hero:  ..**")
     name = input("Enter your hero's name/title: ")
     health = int(input("Enter your hero's health (1-100): "))
@@ -70,8 +73,10 @@ def add_hero():
 
 
 
-# Allows the user to edit any hero they'll like
+
 def edit_hero():
+    # Allows the user to edit any hero they'll like
+    
     print("\n**..  Edit Heroes:  ..**")
     print("Here is the current hero roster:")
     hero_roster()
@@ -104,9 +109,11 @@ def edit_hero():
 
 
 
-# Allows the user to remove any hero they would like from the roster
-#including their own heros that they have created.
+
 def remove_hero():
+    # Allows the user to remove any hero they would like from the roster
+    #including their own heros that they have created.
+    
     print("\n**.. Remove Heroes: ..**")
     print("Here is the current Hero Roster:")
     hero_roster()
@@ -126,11 +133,13 @@ def remove_hero():
             return
 
 
-#Allows the user to battle heroes
-#User will choose two heroes, and then will fight, which is done by taking turns.
-#winner is determined by who reaches 0 health first.
+
 
 def battle():
+    #Allows the user to battle heroes
+    #User will choose two heroes, and then will fight, which is done by taking turns.
+    #winner is determined by who reaches 0 health first.
+   
     print("\n**.. Battle ..**")
     
 
