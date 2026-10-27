@@ -76,7 +76,7 @@ def add_hero():
 
 def edit_hero():
     # Allows the user to edit any hero they'll like
-    
+
     print("\n**..  Edit Heroes:  ..**")
     print("Here is the current hero roster:")
     hero_roster()
@@ -209,9 +209,20 @@ def battle():
     health1 -= damage2
     print(f"Damaged {hero1} for {damage2}, they are now on {health1} health! ")
 
+    # Determine the winner
+    if health1 <= 0 and health2 <= 0:
+        print("It's a draw!")
+    elif health1 <= 0:
+        print(f"{hero2} wins!")
+    elif health2 <= 0:
+        print(f"{hero1} wins!")
+    
+    
 
 def battle_history():
     print("\n**.. Battle History ..**")
+
+
 
 
 
