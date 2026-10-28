@@ -178,7 +178,7 @@ def battle():
     else:
         print("The battle will now begin!")
         print(f"{hero1} vs {hero2}")
-        print("Let the battle begin!")
+        print("\nLet the battle begin!\n")
    
    
    # Formula for damage
