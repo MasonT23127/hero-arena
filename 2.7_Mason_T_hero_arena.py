@@ -191,10 +191,10 @@ def battle():
 
 
     #Random number, which will decrease attack damage
-    rand_num = random.randint(50, 80)
+    rand_num = random.randint(10, 20)
     damage1 -= rand_num
     
-    rand_num2 = random.randint(50, 80)
+    rand_num2 = random.randint(10, 20)
     damage2 -= rand_num
 
 
