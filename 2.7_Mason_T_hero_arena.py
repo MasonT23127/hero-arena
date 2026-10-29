@@ -183,10 +183,10 @@ def battle():
    
    # Formula for damage
     # What damage the first hero does:
-    damage1 = max(0, attack1 + weapon1 - defence2)
+    damage1 = max(1, attack1 + weapon1 - defence2)
     
     # What damage the second hero does:
-    damage2 = max(0, attack2 + weapon2 - defence1)
+    damage2 = max(1, attack2 + weapon2 - defence1)
 
 
 
