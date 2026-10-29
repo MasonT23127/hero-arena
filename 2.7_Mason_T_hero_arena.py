@@ -190,6 +190,7 @@ def battle():
         rand_num = random.randint(10, 20) # random number for RNG
         damage1 = max(1, attack1 + weapon1 - defence2 - rand_num) #formula for damage        
 
+        #First hero statement
         print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
         health2 -= damage1
         print(f"Damaged {hero2} for {damage1}, they are now on {max(0, health2)} health!")
@@ -199,7 +200,11 @@ def battle():
             break
         rand_num2 = random.randint(10, 20) # random number for RNG
         damage2 = max(1, attack2 + weapon2 - defence1 - rand_num2) #formula for damage
-    
+        
+        #Second hero statement
+        print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
+        health1 -= damage2
+        print(f"Damaged {hero1} for {damage2}, they are now on {max(0, health1)} health!")
 
 def battle_history():
     print("\n**.. Battle History ..**")
