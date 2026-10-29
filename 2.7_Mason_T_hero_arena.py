@@ -183,10 +183,10 @@ def battle():
    
    # Formula for damage
     # What damage the first hero does:
-    damage1 = attack1 + weapon1 - defence2
+    damage1 = max(0, attack1 + weapon1 - defence2)
     
     # What damage the second hero does:
-    damage2 = attack2 + weapon2 - defence1
+    damage2 = max(0, attack2 + weapon2 - defence1)
 
 
 
@@ -195,7 +195,7 @@ def battle():
     damage1 -= rand_num
     
     rand_num2 = random.randint(10, 20)
-    damage2 -= rand_num
+    damage2 -= rand_num2
 
 
     while health1 > 0 and health2 > 0:
