@@ -255,8 +255,6 @@ def battle_history():
 
 
 
-
-
 def main_menu():
     #Main menu for Hero Arena
     while True:
@@ -271,7 +269,26 @@ def main_menu():
         print("6. Battle History")
         print("7. Exit")
         print("=============================")
-        break 
+        
+        choice = input("Choose an option (1-7): ")
+        if choice == "1":
+            hero_roster()
+        elif choice == "2":
+            add_hero()
+        elif choice == "3":
+            edit_hero()
+        elif choice == "4":
+            remove_hero()
+        elif choice == "5":
+            battle()
+        elif choice == "6":
+            battle_history()
+        elif choice == "7":
+            print("Thanks for playing Hero Arena!")
+            break
+
+        else:
+            print("Invalid option. Please choose 1-7.")
 
 #------main routine-------------------------
 if(__name__=="__main__"):
