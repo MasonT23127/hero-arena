@@ -181,24 +181,15 @@ def battle():
         print("\nLet the battle begin!\n")
    
    
-   # Formula for damage
-    # What damage the first hero does:
-    damage1 = max(1, attack1 + weapon1 - defence2)
-    
-    # What damage the second hero does:
-    damage2 = max(1, attack2 + weapon2 - defence1)
+
 
 
 
 
     while health1 > 0 and health2 > 0:
-        print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
-        health2 -= damage1
-        print(f"Damaged {hero2} for {damage1}, they are now on {health2} health! ")
-
-        print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
-        health1 -= damage2
-        print(f"Damaged {hero1} for {damage2}, they are now on {health1} health! ")
+        # First hero attacks
+        rand_num = random.randint(10, 20) # random number for RNG
+        damage1 = max(1, attack1 + weapon1 - defence2 - rand_num) #formula for damage        
 
 
 
