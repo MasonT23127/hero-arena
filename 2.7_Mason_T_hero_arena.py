@@ -190,13 +190,6 @@ def battle():
 
 
 
-    #Random number, which will decrease attack damage
-    rand_num = random.randint(10, 20)
-    damage1 -= rand_num
-    
-    rand_num2 = random.randint(10, 20)
-    damage2 -= rand_num2
-
 
     while health1 > 0 and health2 > 0:
         print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
