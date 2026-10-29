@@ -257,6 +257,9 @@ def battle_history():
 
 
 
+def main_menu():
+    #Main menu for Hero Arena
+
 
 
 #------main routine-------------------------
