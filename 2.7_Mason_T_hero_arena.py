@@ -259,10 +259,20 @@ def battle_history():
 
 def main_menu():
     #Main menu for Hero Arena
-
-
+    while True:
+        print("\n=============================")
+        print("       HERO ARENA")
+        print("=============================")
+        print("1. View Hero Roster")
+        print("2. Add a Hero")
+        print("3. Edit a Hero")
+        print("4. Remove a Hero")
+        print("5. Battle")
+        print("6. Battle History")
+        print("7. Exit")
+        print("=============================")
+        break 
 
 #------main routine-------------------------
 if(__name__=="__main__"):
-    battle()
-    battle_history()
+    main_menu()
