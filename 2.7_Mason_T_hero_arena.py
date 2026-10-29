@@ -177,9 +177,14 @@ def battle():
         print("Hero not found.")
         return
 
+
+    if hero1 == hero2: # prevents the user from choosing the same hero to fight
+        print("A hero cannot battle themselves!")
+        return
+
     change = input("Would you like to change your heroes? (y/n)")
 
-    if change ==("y"):
+    if change.lower() ==("y"):
         battle()
     else:
         print("The battle will now begin!")
@@ -187,6 +192,7 @@ def battle():
         print("\nLet the battle begin!\n")
    
    
+
 
 
 
