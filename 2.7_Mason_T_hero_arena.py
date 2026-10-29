@@ -25,7 +25,8 @@ heroes_list =[  "Legal Man", 70, 80, 65, 60,
                 "Lava Palms", 65, 70, 70, 70,
                 "Forceful", 60, 80, 40, 95]
 
-
+# Stores the results of previous battles
+battle_history_list = []
 
 
 def hero_roster():
@@ -220,8 +221,10 @@ def battle():
     
     # Determine the winner
     if health1 <= 0:
+        winner = hero2
         print(f"{hero2} wins!")
     else:
+        winner =hero1
         print(f"{hero1} wins!")
 
 def battle_history():
