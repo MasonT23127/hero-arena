@@ -185,23 +185,20 @@ def battle():
 
 
 
-
     while health1 > 0 and health2 > 0:
         # First hero attacks
         rand_num = random.randint(10, 20) # random number for RNG
         damage1 = max(1, attack1 + weapon1 - defence2 - rand_num) #formula for damage        
 
+        print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
+        health2 -= damage1
+        print(f"Damaged {hero2} for {damage1}, they are now on {max(0, health2)} health!")
 
-
-
-    # Determine the winner
-    if health1 <= 0 and health2 <= 0:
-        print("It's a draw!")
-    elif health1 <= 0:
-        print(f"{hero2} wins!")
-    elif health2 <= 0:
-        print(f"{hero1} wins!")
-    
+        # Check if the second hero has been defeated
+        if health2 <= 0:
+            break
+        rand_num2 = random.randint(10, 20) # random number for RNG
+        damage2 = max(1, attack2 + weapon2 - defence1 - rand_num2) #formula for damage
     
 
 def battle_history():
