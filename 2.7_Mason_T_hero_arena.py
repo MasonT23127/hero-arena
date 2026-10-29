@@ -158,6 +158,10 @@ def battle():
             defence1 = heroes_list[i+3]
             weapon1 = heroes_list[i+4]
             print(f"Your first hero's stats - Health: {health1}, Attack: {attack1}, Defence: {defence1}, Weapon: {weapon1}")
+   
+    if "health1" not in locals(): # checks if the hero actually exists 
+        print("Hero not found.")
+        return
 
     # Second hero choice
     hero2 = input("Enter your second hero: ")
@@ -169,7 +173,9 @@ def battle():
             defence2 = heroes_list[i+3]
             weapon2 = heroes_list[i+4]
             print(f"Your second hero's stats - Health: {health2}, Attack: {attack2}, Defence: {defence2}, Weapon: {weapon2}")
-
+    if "health1" not in locals(): # checks if the hero actually exists 
+        print("Hero not found.")
+        return
 
     change = input("Would you like to change your heroes? (y/n)")
 
@@ -211,7 +217,7 @@ def battle():
         print(f"{hero2} wins!")
     else:
         print(f"{hero1} wins!")
-        
+
 def battle_history():
     print("\n**.. Battle History ..**")
 
