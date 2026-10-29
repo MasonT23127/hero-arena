@@ -235,6 +235,18 @@ def battle():
 
 def battle_history():
     print("\n**.. Battle History ..**")
+   
+   
+       # Display each recorded battle
+    for i in range(len(battle_history_list)):
+        battle = battle_history_list[i]
+
+        print(f"\nBattle {i + 1}")
+        print(f"{battle[0]} - Remaining health: {battle[1]}")
+        print(f"{battle[2]} - Remaining health: {battle[3]}")
+        print(f"Winner: {battle[4]}")
+        print("-----------------------------")
+
 
 
 
@@ -245,3 +257,4 @@ def battle_history():
 #------main routine-------------------------
 if(__name__=="__main__"):
     battle()
+    battle_history()
