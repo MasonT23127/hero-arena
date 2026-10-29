@@ -205,7 +205,13 @@ def battle():
         print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
         health1 -= damage2
         print(f"Damaged {hero1} for {damage2}, they are now on {max(0, health1)} health!")
-
+    
+    # Determine the winner
+    if health1 <= 0:
+        print(f"{hero2} wins!")
+    else:
+        print(f"{hero1} wins!")
+        
 def battle_history():
     print("\n**.. Battle History ..**")
 
