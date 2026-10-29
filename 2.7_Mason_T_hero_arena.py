@@ -173,7 +173,7 @@ def battle():
             defence2 = heroes_list[i+3]
             weapon2 = heroes_list[i+4]
             print(f"Your second hero's stats - Health: {health2}, Attack: {attack2}, Defence: {defence2}, Weapon: {weapon2}")
-    if "health1" not in locals(): # checks if the hero actually exists 
+    if "health2" not in locals(): # checks if the hero actually exists 
         print("Hero not found.")
         return
 
