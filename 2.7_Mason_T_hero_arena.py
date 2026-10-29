@@ -226,6 +226,12 @@ def battle():
     else:
         winner =hero1
         print(f"{hero1} wins!")
+    
+    battle_result = [hero1, max(0, health1),
+                     hero2, max(0, health2), winner]
+    battle_history_list.append(battle_result)
+    print("Battle result saved to history!")
+
 
 def battle_history():
     print("\n**.. Battle History ..**")
