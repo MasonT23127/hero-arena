@@ -236,6 +236,11 @@ def battle():
 def battle_history():
     print("\n**.. Battle History ..**")
    
+
+    # Check if there are any previous battles
+    if len(battle_history_list) == 0:
+        print("No battles have been recorded yet.")
+        return
    
        # Display each recorded battle
     for i in range(len(battle_history_list)):
