@@ -1,3 +1,4 @@
+
 '''
     Author: Mason Twemlow
     Date: 15/10/2026
@@ -193,10 +194,6 @@ def battle():
         print("\nLet the battle begin!\n")
    
    
-
-
-
-
 
     while health1 > 0 and health2 > 0:
         # First hero attacks
