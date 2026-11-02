@@ -240,8 +240,8 @@ def battle():
         else:
             print("Invalid choice. Please enter y or n.")
 
-    if change.lower() ==("y"):
-        battle()
+    if change == "y":
+        return battle()
     else:
         print("The battle will now begin!")
         print(f"{hero1} vs {hero2}")
