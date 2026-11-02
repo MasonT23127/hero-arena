@@ -80,18 +80,25 @@ def add_hero():
     #User can add their own hero to the roster
     # However, they must use all allocated points.
     
+   
+   
     print("**..  Add Your Hero:  ..**")
-    name = input("Enter your hero's name/title: ")
-    health = int(input("Enter your hero's health (1-100): "))
-    attack = int(input("Enter your hero's attack (1-100): "))
-    defence = int(input("Enter your hero's defence (1-100): "))
-    weapon = int(input("Enter your hero's weapon (1-100): "))
+    name = force_name("Enter your hero's name/title: ", 2, 30)
 
-    #calculations if the user has entered 275 points
-    total_points = health + attack + defence + weapon
-    if total_points != 275:
-        print("Error: Total points must equal 275. Please try again.")
-        return
+    while True:
+        health = force_int("Enter your hero's health (1-100): ", 1,100)
+        attack = force_int("Enter your hero's attack (1-100): ",1,100)
+        defence = force_int("Enter your hero's defence (1-100): ",1,100)
+        weapon = force_int("Enter your hero's weapon (1-100): ",1,100)
+
+        #calculations if the user has entered 275 points
+        total_points = health + attack + defence + weapon
+
+        if total_points == 275:
+            print("Your hero's stats are valid!")
+            break
+        else:    
+            print("Error: Total points must equal 275. Please try again.")
 
     new_hero = [name, health, attack, defence, weapon]
     heroes_list.extend(new_hero)
