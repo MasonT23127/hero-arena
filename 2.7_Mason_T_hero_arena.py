@@ -16,6 +16,32 @@ import os
 
 #------functions-------------------------
 
+#Checks that the user has entered a number
+def force_float(message,lower,upper): 
+    print("Force number function")
+    while True: #forces the user to enter a number in the range
+        try:
+            num=float(input(message))
+            if num>=lower and num<=upper:
+                break # allows the user to continue
+            else:
+                print(f"Error, {num} is too high or is less than 0", ) 
+        except:
+            print("Error, please try again and enter a number")
+    return num
+def force_name(message, lower, upper):
+    while True:
+        name = input(message).title()
+
+        if len(name) >= lower and len(name) <= upper and name.isalpha():
+            print("The name is valid")
+            return name
+        else:
+            print("Invalid name, please enter your name between  {}-{} letters and have no numbers.".format(lower,upper))
+    return name
+
+
+
 #These are the standard heroes
 #User can add additonal or remove heroes if they'd like.
 # "Name/title, Health, Attack, Defence, Weapon"
