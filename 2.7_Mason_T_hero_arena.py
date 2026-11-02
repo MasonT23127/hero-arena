@@ -165,7 +165,7 @@ def remove_hero():
     print("Here is the current Hero Roster:")
     hero_roster()
 
-    hero_name = input("Enter the name of the hero you want to remove: ")
+    hero_name = force_name("Enter the name of the hero you want to remove: ", 2, 30)
 
     #Find hero in roster
     for i in range(0, len(heroes_list), 5):
@@ -178,7 +178,7 @@ def remove_hero():
             print("Hero has been removed.")
             hero_roster()
             return
-
+    print("Hero not found. Please enter a valid hero name.")
 
 
 
