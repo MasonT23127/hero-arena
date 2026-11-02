@@ -28,17 +28,16 @@ def force_int(message,lower,upper):
                 print(f"Error, please enter a number between {lower} and {upper}.")
         except ValueError:
             print("Error, please try again and enter a whole number")
-    return num
 def force_name(message, lower, upper):
     while True:
-        name = input(message).title()
+        name = input(message).strip().title()
 
-        if len(name) >= lower and len(name) <= upper and name.isalpha():
+        if (lower <= len(name) <= upper
+                and name.replace(" ", "").isalpha()):
             print("The name is valid")
             return name
         else:
-            print("Invalid name, please enter your name between  {}-{} letters and have no numbers.".format(lower,upper))
-    return name
+           print(f"Invalid name. Please enter a name between {lower} and {upper} characters, using letters and spaces only.")
 
 
 
