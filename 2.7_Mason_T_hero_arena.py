@@ -251,8 +251,8 @@ def battle():
 
     while health1 > 0 and health2 > 0:
         # First hero attacks
-        rand_num = random.randint(10, 20) # random number for RNG
-        damage1 = max(1, attack1 + weapon1 - defence2 - rand_num) #formula for damage        
+        rand_num = random.randint(1, 5) # random number for RNG
+        damage1 = max(1, (attack1 + weapon1 - defence2) // 6 + rand_num) #formula for damage        
 
         #First hero statement
         print(f"Random number for {hero1}: {rand_num}. Final damage: {damage1}")
@@ -262,8 +262,8 @@ def battle():
         # Check if the second hero has been defeated
         if health2 <= 0:
             break
-        rand_num2 = random.randint(10, 20) # random number for RNG
-        damage2 = max(1, attack2 + weapon2 - defence1 - rand_num2) #formula for damage
+        rand_num2 = random.randint(1, 5) # random number for RNG
+        damage2 = max(1, (attack2 + weapon2 - defence1) // 6 + rand_num2) #formula for damage
         
         #Second hero statement
         print(f"Random number for {hero2}: {rand_num2}. Final damage: {damage2}")
