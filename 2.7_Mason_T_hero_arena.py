@@ -17,17 +17,17 @@ import os
 #------functions-------------------------
 
 #Checks that the user has entered a number
-def force_float(message,lower,upper): 
+def force_int(message,lower,upper): 
     print("Force number function")
     while True: #forces the user to enter a number in the range
         try:
-            num=float(input(message))
+            num=int(input(message))
             if num>=lower and num<=upper:
-                break # allows the user to continue
+                return num # allows the user to continue
             else:
-                print(f"Error, {num} is too high or is less than 0", ) 
-        except:
-            print("Error, please try again and enter a number")
+                print(f"Error, please enter a number between {lower} and {upper}.")
+        except ValueError:
+            print("Error, please try again and enter a whole number")
     return num
 def force_name(message, lower, upper):
     while True:
