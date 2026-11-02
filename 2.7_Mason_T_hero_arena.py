@@ -127,10 +127,21 @@ def edit_hero():
             print("-----------------------------")
 
         #now asking the user's input
-            health = int(input("Enter new health: "))
-            attack = int(input("Enter new attack: "))
-            defence = int(input("Enter new defence: "))
-            weapon = int(input("Enter new weapon: "))
+
+            while True:
+                health = force_int("Enter your new hero's health (1-100): ", 1,100)
+                attack = force_int("Enter your new hero's attack (1-100): ",1,100)
+                defence = force_int("Enter your new hero's defence (1-100): ",1,100)
+                weapon = force_int("Enter your new hero's weapon (1-100): ",1,100)
+
+                #calculations if the user has entered 275 points
+                total_points = health + attack + defence + weapon
+
+                if total_points == 275:
+                    print("Your new hero's stats are valid!")
+                    break
+                else:    
+                    print("Error: Total points must equal 275. Please try again.")
 
             #changes the stats
             heroes_list[i+1] = health
@@ -140,6 +151,8 @@ def edit_hero():
 
             print(f"{hero_name} successfully updated.")
             return
+        print("Hero not found. Please enter a valid hero name.")
+    
 
 
 
