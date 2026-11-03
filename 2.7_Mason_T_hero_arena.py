@@ -329,7 +329,7 @@ def main_menu():
         print("================================ \n")
 
         
-        choice = input("Choose an option (1-7): ")
+        choice = force_int("Choose an option (1-7): ",1,7)
         if choice == "1":
             hero_roster()
         elif choice == "2":
@@ -346,8 +346,6 @@ def main_menu():
             print("Thanks for playing Hero Arena!")
             break
 
-        else:
-            print("Invalid option. Please choose 1-7.")
 
 #------main routine-------------------------
 if(__name__=="__main__"):
