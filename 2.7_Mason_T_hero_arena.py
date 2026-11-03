@@ -129,7 +129,7 @@ def edit_hero():
     print("\n**..  Edit Heroes:  ..**")
     print("Here is the current hero roster:")
     hero_roster()
-    hero_name = input("Enter the name of the hero you want to edit: ")
+    hero_name = force_name("Enter the name of the hero you want to edit: ",2,30)
 
     # Find the hero in the roster
     for i in range(0, len(heroes_list), 5):
