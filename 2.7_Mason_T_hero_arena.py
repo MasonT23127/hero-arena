@@ -81,7 +81,11 @@ def add_hero():
    
    
     print("**..  Add Your Hero:  ..**")
-    name = force_name("Enter your hero's name/title: ", 2, 30)
+    hero_name = force_name("Enter your hero's name: ", 2, 30)
+
+    while hero_name in heroes_list[::5]:
+        print("Error, this hero name already exists.")
+        hero_name = force_name("Enter another name: ", 2, 30)
 
     while True:
         health = force_int("Enter your hero's health (1-100): ", 1,100)
