@@ -32,7 +32,6 @@ print("========================================")
 
 #Checks that the user has entered a number
 def force_int(message,lower,upper): 
-    print("Force number function")
     while True: #forces the user to enter a number in the range
         try:
             num=int(input(message))
