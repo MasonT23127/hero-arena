@@ -65,11 +65,9 @@ def hero_roster():
 
 
     for i in range(0, len(heroes_list), 5):
-        print(f"\nName: {heroes_list[i]}")
-        print(f"Health: {heroes_list[i+1]}")
-        print(f"Attack: {heroes_list[i+2]}")
-        print(f"Defence: {heroes_list[i+3]}")
-        print(f"Weapon: {heroes_list[i+4]}\n")
+        print(f"\n{heroes_list[i]}")
+        print(f"Health: {heroes_list[i+1]} | Attack: {heroes_list[i+2]}")
+        print(f"Defence: {heroes_list[i+3]} | Weapon: {heroes_list[i+4]}")
         print("-----------------------------")
 
 
@@ -328,21 +326,21 @@ def main_menu():
 
         print("================================ \n")
 
-        
+        #user inputs
         choice = force_int("Choose an option (1-7): ",1,7)
-        if choice == "1":
+        if choice == 1:
             hero_roster()
-        elif choice == "2":
+        elif choice == 2:
             add_hero()
-        elif choice == "3":
+        elif choice == 3:
             edit_hero()
-        elif choice == "4":
+        elif choice == 4:
             remove_hero()
-        elif choice == "5":
+        elif choice == 5:
             battle()
-        elif choice == "6":
+        elif choice == 6:
             battle_history()
-        elif choice == "7":
+        elif choice == 7:
             print("Thanks for playing Hero Arena!")
             break
 
