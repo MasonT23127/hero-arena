@@ -116,7 +116,7 @@ def add_hero():
         else:    
             print("Error: Total points must equal 275. Please try again.")
 
-    new_hero = [name, health, attack, defence, weapon]
+    new_hero = [hero_name, health, attack, defence, weapon]
     heroes_list.extend(new_hero)
     print(f"New hero added: {new_hero}")
     
