@@ -14,6 +14,20 @@ import datetime
 import string
 import os
 
+
+
+#Welcome message
+
+print("========================================")
+print("       WELCOME TO HERO ARENA!")
+print("========================================")
+print("Create your heroes, build your team,")
+print("and battle to become the ultimate champion!")
+print()
+print("Good luck, and enjoy the game!")
+print("========================================")
+
+
 #------functions-------------------------
 
 #Checks that the user has entered a number
