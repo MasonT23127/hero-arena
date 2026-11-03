@@ -2,7 +2,7 @@
 '''
     Author: Mason Twemlow
     Date: 15/10/2026
-    Version 4.0
+    Version 4.0 (final)
     Description: Hero Arena simulation game where the user can create, edit and fight heroes.
 '''
 
